@@ -1,0 +1,74 @@
+.friends-page {
+    max-width: 600px; /* Set a max-width for better layout control */
+    margin: 20px auto; /* Center the component on the page */
+    padding: 20px; /* Add padding inside the component */
+    border: 2px solid #6A5ACD; /* Purple border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: fadeIn 0.3s forwards; /* Fade-in animation */
+}
+
+h2 {
+    color: #6A5ACD; /* Purple color for headings */
+    text-align: center; /* Centered headings */
+}
+
+input {
+    width: calc(100% - 20px); /* Full width input minus padding */
+    padding: 10px; /* Inner padding for comfort */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin-bottom: 10px; /* Space below the input */
+    font-size: 16px; /* Font size for readability */
+}
+
+button {
+    background-color: #6A5ACD; /* Purple button background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #5a4fb0; /* Darker purple on hover */
+}
+
+ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    padding: 10px; /* Padding for list items */
+    border-bottom: 1px solid #ddd; /* Light separator between items */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Center items vertically */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}
+
+.status-message {
+    margin-top: 10px; /* Margin above the status message */
+    color: #ff4500; /* Warning color for messages */
+    text-align: center; /* Center the message */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Slide up effect */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

@@ -1,0 +1,33 @@
+/* Navbar Styles */
+.navbar {
+    background: rgb(247, 241, 255);
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0; /* Fixed margin */
+    padding: 0; /* Fixed padding */
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    display: inline; /* Keep li inline for horizontal layout */
+}
+
+.navbar a {
+    color: rgb(0, 0, 0); /* Change link color */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.3s, font-weight 0.3s; /* Added transform transition */
+    font-family: Arial, sans-serif; /* Fixed font declaration */
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    transform: scale(1.2); /* Scale the link to 120% */
+    font-weight: bold; /* Bold the font on hover */
+    z-index: 1; /* Ensure the hovered link is on top */
+    color:rgb(15, 0, 127)
+}
